@@ -170,10 +170,10 @@ function get3rdCar(inventory) {
 function getCarInfoByIndex(inventory, index) {
   /* code here */
 
-  for (let i = 0; i < inventory.length; i++) {
+  // for (let i = 0; i < inventory.length; i++) {
 
 
-  }
+  // }
 
   return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`;
 
