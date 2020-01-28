@@ -223,7 +223,6 @@ function sortCarInventory(myArray) {
   return myArray.sort((a, b) => a.car_model < b.car_model ? -1 : a.car_model > b.car_model ? 1 : 0);
 
   // return myArray.car_make;
-
 }
 
 /**
@@ -237,14 +236,15 @@ function sortCarInventory(myArray) {
  */
 function getModelYears(yearsArray) {
   /* code here */
+  let newYearsArr = [];
 
   for (let i = 0; i < yearsArray.length; i++) {
 
-    return yearsArray[i].car_year;
+    newYearsArr.push(yearsArray[i].car_year);
 
   }
 
-  console.log(yearsArray.car_year);
+  return newYearsArr;
 
 }
 
@@ -263,11 +263,16 @@ function getModelYears(yearsArray) {
 function getOlderCars(oldCarsArray, num1) {
   /* code here */
 
+  let newOldCarsArr = [];
+
   for (let i = 0; i < oldCarsArray.length; i++) {
-    return oldCarsArray[i].car_year <= num1;
+
+    if (oldCarsArray[i].car_year <= num1) {
+      newOldCarsArr.push(oldCarsArray[i]);
+    }
   }
 
-  console.log(oldCarsArray.car_year);
+  return newOldCarsArr;
 
 }
 
@@ -285,15 +290,17 @@ function getOlderCars(oldCarsArray, num1) {
 function getGermanCars(germanArray) {
   /* code here */
 
+  let someGerman = [];
+
   for (let i = 0; i < germanArray.length; i++) {
 
-    if (germanArray[i].car_make === 'Audi' || germanArray[i].car_make === 'Mercedes-Benz' || germanArray[i].car_make === 'Volkwagen' || germanArray[i].car_make === 'BMW')
+    if (germanArray[i].car_make === 'Audi' || germanArray[i].car_make === 'Mercedes-Benz' || germanArray[i].car_make === 'Volkswagen' || germanArray[i].car_make === 'BMW')
 
-      return germanArray[i].car_make;
+      someGerman.push(germanArray[i]);
   }
 
+  return someGerman;
 
-  console.log(germanArray.car_make);
 }
 
 /**
