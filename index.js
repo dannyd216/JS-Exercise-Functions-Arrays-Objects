@@ -337,12 +337,7 @@ const argTimesTwo = num => num * 2; // code here!
 function carMaker(speed) {
   /* code here */
 
-  let someCar = { odometer: speed,
-                  drive(): function () {
-                    
 
-                  };
-  }
 
 //     /* code here */
 //     let smartPerson = { name: whoSmart, 
