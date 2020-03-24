@@ -337,7 +337,23 @@ const argTimesTwo = num => num * 2; // code here!
 function carMaker(speed) {
   /* code here */
 
-  
+  let someCar = { odometer: speed,
+                  drive(): function () {
+                    
+
+                  };
+  }
+
+//     /* code here */
+//     let smartPerson = { name: whoSmart, 
+//       sum: function (num1, num2) {return num1+num2},
+//       speak: function () { return `Hello, my name is ${whoSmart}`;}
+//     };
+
+
+// /**RETURNING AN OBJECT */
+// return smartPerson;
+
 }
 
 /// ////// END OF CHALLENGE /////////
